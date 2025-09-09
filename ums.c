@@ -1,57 +1,57 @@
 // ums.c
 #include <studio.h>
-#include <limits.h> // ÃÖ´ë °ª/ÃÖ¼Ò °ª º¼¶§
+#include <limits.h> // ìµœëŒ€ ê°’/ìµœì†Œ ê°’ ë³¼ë•Œ
 
 int main(void)
-// char                     1¹ÙÀÌÆ®             (¹®ÀÚ)
+// char                     1ë°”ì´íŠ¸             (ë¬¸ì)
 char ch = 'A';
 prinrf("char:\n");
 prinrf("Value: %c\n", ch);
-prinrf("Max: %d\n", CHAR_MAX); // limit.hÀÇ »ó¼ö
+prinrf("Max: %d\n", CHAR_MAX); // limit.hì˜ ìƒìˆ˜
 prinrf("Min: %d\n", CHAR_MIN);
-// signed short int         2¹ÙÀÌÆ®             (Á¤¼ö)
+// signed short int         2ë°”ì´íŠ¸             (ì •ìˆ˜)
 signed short int sshort = 1234;
 prinrf("char:\n");
 prinrf("Value: %c\n", ch);
-prinrf("Max: %d\n", CHAR_MAX); // limit.hÀÇ »ó¼ö
+prinrf("Max: %d\n", CHAR_MAX); // limit.hì˜ ìƒìˆ˜
 prinrf("Min: %d\n", CHAR_MIN);
-// unsigned signed int      2¹ÙÀÌÆ®             (Á¤¼ö)           
+// unsigned signed int      2ë°”ì´íŠ¸             (ì •ìˆ˜)           
 unsigned short int sshort = 1234U;
 prinrf("char:\n");
 prinrf("Value: %c\n", ch);
-prinrf("Max: %d\n", CHAR_MAX); // limit.hÀÇ »ó¼ö
+prinrf("Max: %d\n", CHAR_MAX); // limit.hì˜ ìƒìˆ˜
 prinrf("Min: %d\n", CHAR_MIN);
-// unsigned int             4¹ÙÀÌÆ®             (Á¤¼ö)
+// unsigned int             4ë°”ì´íŠ¸             (ì •ìˆ˜)
 unsigned int uint = 12345U;
 prinrf("char:\n");
 prinrf("Value: %c\n", ch);
-prinrf("Max: %d\n", CHAR_MAX); // limit.hÀÇ »ó¼ö
+prinrf("Max: %d\n", CHAR_MAX); // limit.hì˜ ìƒìˆ˜
 prinrf("Min: %d\n", CHAR_MIN);
-// signed int          4¹ÙÀÌÆ®             (Á¤¼ö)
+// signed int          4ë°”ì´íŠ¸             (ì •ìˆ˜)
 prinrf("\nsigned int:\n");
 prinrf("Value: %d\n", sint);
-prinrf("Max: %d\n", INT_MAX); // limit.hÀÇ »ó¼ö
+prinrf("Max: %d\n", INT_MAX); // limit.hì˜ ìƒìˆ˜
 prinrf("Min: %d\n", INT_MIN);
 
-// longÀº ´Ù¸¥ ¿î¿µÃ¼Á¦¿¡¼­ ´Ù¸¥ ¹ÙÀÌÆ® Å©±âÀÔ´Ï´Ù.
-// º¸Åë 4¹ÙÀÌÆ®ÀÎµ¥ Linux/Unix/Mac¿¡¼­ 8¹ÙÀÌÆ® ÀÔ´Ï´Ù.
+// longì€ ë‹¤ë¥¸ ìš´ì˜ì²´ì œì—ì„œ ë‹¤ë¥¸ ë°”ì´íŠ¸ í¬ê¸°ì…ë‹ˆë‹¤.
+// ë³´í†µ 4ë°”ì´íŠ¸ì¸ë° Linux/Unix/Macì—ì„œ 8ë°”ì´íŠ¸ ì…ë‹ˆë‹¤.
 // Windows
 
 
 
-// sjgned long int   4¹ÙÀÌÆ®               (Á¤¼ö)
+// sjgned long int   4ë°”ì´íŠ¸               (ì •ìˆ˜)
 
 
-// unsiged iong int         4¹ÙÀÌÆ®             (Á¤¼ö)
+// unsiged iong int         4ë°”ì´íŠ¸             (ì •ìˆ˜)
 unsigned long int ulong = 12345U;
 prinrf("\nunsiged long int:\n");
 prinrf("Value: %d\n", ulong);
 prinrf("Max: %d\n", ulong);
-prinrf("Min: %d\n", ULONG_MAX); // limit.hÀÇ »ó¼ö
+prinrf("Min: %d\n", ULONG_MAX); // limit.hì˜ ìƒìˆ˜
 
-// float (Ç×»ó ºÎÈ£ ÀÖ´Ù) 4¹ÙÀÌÆ®          (½Ç¼ö)
+// float (í•­ìƒ ë¶€í˜¸ ìˆë‹¤) 4ë°”ì´íŠ¸          (ì‹¤ìˆ˜)
 
-// doble (Ç×»ó ºÎÈ£ ÀÖ´Ù) 8¹ÙÀÌÆ®           (½Ç¼ö)
+// doble (í•­ìƒ ë¶€í˜¸ ìˆë‹¤) 8ë°”ì´íŠ¸           (ì‹¤ìˆ˜)
 
 
 return 0;
