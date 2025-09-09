@@ -2,58 +2,24 @@
 #include <stdio.h>
 
 int main(void) {
-	char x = 72;
-	char y = 105;
-	char z = 33;
+    // ASCII ê°’ìœ¼ë¡œ ë¬¸ì ì¶œë ¥
+    char x = 72; // 'H'
+    char y = 105; // 'i'
+    char z = 33; // '!'
 
-	printf("ASCII %d + %d + %d = %c%c%c", x, y, z, )
+    printf("ASCII %d + %d + %d = %c%c%c\n", x, y, z, x, y, z);
 
-		printf("\n%c + 1 = %c", a, b)
+    // ë¬¸ì 'A'ì™€ ê·¸ ë‹¤ìŒ ë¬¸ì ì¶œë ¥
+    char a = 'A';
+    char b = a + 1;
 
-		printf("\n\nASCII ¹®ÀÚ´Â ¼ø¼­´ë·Î Ãâ·ÂÇÏ±â:");
-	for (int i = 48; i <= 57; i++) {
-		printf("\nASCII:")
+    printf("%c + 1 = %c\n", a, b);
 
+    // ASCII ê°’ 85ë¶€í„° 105ê¹Œì§€ ë¬¸ì ì¶œë ¥
+    printf("ASCII ê°’ 85ë¶€í„° 105ê¹Œì§€ì˜ ë¬¸ì:\n");
+    for (int i = 85; i <= 105; i++) {
+        printf("ASCII:: %d = %c\n", i, i);
+    }
 
-
-			// cypher.c
-#include <studio.h>
-#include <string.h>
-
-			void cypher(char* msg, int sft) {
-			char ch;
-			int i;
-
-			for (i = 0; msg[i] != '\0'; ++i) {
-				ch = msg[i];
-
-				//¾ÏÈ£ (´ë¹®ÀÚ)
-				if (ch > 'A' && ch <= 'Z') {
-					ch = ch - 'Z' + 'A' - 1;
-				}
-				else if (ch < 'A') {
-					ch = ch - 'Z' - 'A' + 1;
-				}
-				msg[i] = ch;
-			}
-		}
-
-		int main(void) {
-			// »ç¿ëÀÚ¿¡°Ô ¸Ş¼¼Áö¸¦ ¹Ş´Ù.
-			char message[100];
-			printf("Enter a message: ");
-			fgest(message, sizeof(message), stdin);
-
-			// ¾ÏÈ£ °ª ÁÖ±â (ºĞÀÚ¸¦ ¸î °³¾¿ ÀÌµ¿ÇÏ±â?)
-			int shift;
-			printf("Enter shift value: ");
-			scanf_s("%d", &shift);
-
-			// ¾ÏÈ£·Î º¯°æÇÏ±â
-			cypher(message, shift);
-
-			// ¾ÏÈ£µÈ ¸Ş¼¼Áö¸¦ Ãâ·ÂÇÏ±â
-			printf("Encrypted! %s", message);
-
-			return 0;
-		}
+    return 0;
+}
