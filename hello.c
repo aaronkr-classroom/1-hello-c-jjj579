@@ -1,16 +1,14 @@
 #include <studio.h>
 
 int main(void) {
-	int age = 45;
-	char grade = "A";
-	char name[] = "Aaron";// ['A','a','r','o','n']
-
-
-	printf("Hello World!~\n");
-	printf("My name is &s.\n", name);
-	printf("I'm &d years old.\n\t", age);
-	printf("\tI want a &c grade.\n", grade);
+	int age = 20;
+	char grade = 'A';
+	char name[] = "Aaron";
+	
+	printf("Hello World!~");
+	printf("I'm %d years old.", age);
+	printf("I want a %c grade.", grade);
+	printf("My name is %s.", name);
 	return 0;
-
-}
+};
 
